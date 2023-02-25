@@ -39,6 +39,20 @@ const Login = (props) => {
     props.onLogin();
   };
 
+  var passwordField = document.querySelector('#password');
+var show =document.querySelector('.show');
+var hide =document.querySelector('.hide');
+show.onclick= function(){
+  passwordField.setAttribute("type", "password");
+show.style.display ="none";
+hide.style.display="block";
+}
+hide.onclick =function(){
+  passwordField.setAttribute("type", "text");
+hide.style.display ="none";
+show.style.display="block";
+}
+
   return (
     <div className="login-div">
       <img
@@ -66,6 +80,8 @@ const Login = (props) => {
             id="password"
             name="password"
           />
+          <i class="show fa fa-eye"></i>
+          <i class="hide fa fa-eye-slash"></i>
         </div>
         <button className="login-btn" type="submit">
           Log In

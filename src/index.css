@@ -128,3 +128,27 @@ input:focus {
   font-weight: 700;
   color: #006895;
 }
+.password {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: transparent;
+  align-items: center;
+  gap:5px;
+}
+
+.password input {
+  width:100%;
+}
+
+
+i{
+
+  position: relative;
+  left:10px;
+  font-size: 1.3em;
+  z-index: 10;
+}
+.hide {
+  display: none;
+}
